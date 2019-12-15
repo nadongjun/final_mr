@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/account_btn_follow_signout"
+            android:layout_toRightOf="@+id/account_iv_profile"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/dest_id"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="이름"
+
+                />
+            <EditText
+                android:id="@+id/dest_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text=""
+                android:hint="쪽지 내용"
+                />
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="쪽지전송" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="보낸 쪽지목록" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/send_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="262dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="받은 쪽지목록" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/get_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="262dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

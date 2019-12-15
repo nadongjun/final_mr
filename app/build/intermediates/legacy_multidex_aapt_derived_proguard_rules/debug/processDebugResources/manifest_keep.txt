@@ -1,0 +1,2 @@
+# Referenced at /Users/nadongjun/Desktop/Howlstaram_f16/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:20
+-keep class androidx.multidex.MultiDexApplication { <init>(...); }

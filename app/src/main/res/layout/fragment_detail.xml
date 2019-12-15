@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/account_btn_follow_signout"
+        android:layout_toRightOf="@+id/account_iv_profile"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="검색 글 내용"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/post_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/post_reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="RESET" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailviewfragment_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="630dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
